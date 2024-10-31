@@ -1,0 +1,180 @@
+/* grid & base layout for form styles */
+
+._25 {
+    width: 21%;
+    display: inline;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+._50 {
+    width: 46%;
+    display: inline;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+._75 {
+    width: 71%;
+    display: inline;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+._100 {
+    width: 96%;
+    display: inline;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* size classes */
+.qs-input-mini {
+    width: 60px;
+}
+
+.qs-input-small {
+    width: 90px;
+}
+
+.qs-input-medium {
+    width: 150px;
+}
+
+.qs-input-large {
+    width: 210px;
+}
+
+.qs-input-xlarge {
+    width: 270px;
+}
+
+.qs-input-xxlarge {
+    width: 530px;
+}
+
+.qs-input-error
+{
+    border-color: #A94442;
+}
+
+/* support page styling */
+
+.qs-tickets
+{
+    overflow: auto;
+    height: 800px;
+}
+
+.qs-ticket-content
+{
+    overflow: auto;
+    height: 800px;
+}
+
+.qs-ticket-content-item
+{
+}
+
+hr.ticket-content { padding: 0; border: none; border-top: medium double #ccc; color: #ccc; text-align: center; }
+/*hr.ticket-content:after { content: "�"; display: inline-block; position: relative; top: -0.7em; font-size: 1.5em; padding: 0 0.25em; background: white; }*/
+
+/* form styling */
+
+.qs-form label
+{
+    font-weight: bold;
+    padding-bottom: 2px;
+    display: block;
+}
+
+.qs-form input
+{
+    width: 75%;
+    height: 40px;
+    font-size: 18px;
+}
+
+.qs-form input.rounded
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.qs-form textarea
+{
+    width: 75%;
+    font-size: 18px;
+}
+
+/* knowledge base pages */
+
+.ui-autocomplete-loading {
+    background: white url("images/ui-anim_basic_16x16.gif") right center no-repeat;
+}
+
+ul.quip-support-article-list {
+    padding-left: 20px;
+    list-style-image: url('images/note.png');
+}
+
+/*  Message boxes front-end */
+
+.qs-info-box, .qs-success-box, .qs-warning-box, .qs-error-box {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+}
+.qs-info-box {
+    color: #00529B;
+    background: #BDE5F8 url('info.png') no-repeat 10px center;
+}
+.qs-success-box {
+    color: #4F8A10;
+    background: #DFF2BF url('success.png') no-repeat 10px center;
+}
+.qs-warning-box {
+    color: #9F6000;
+    background: #FEEFB3 url('warning.png') no-repeat 10px center;
+}
+.qs-error-box {
+    color: #D8000C;
+    background: #FFBABA url('error.png') no-repeat 10px center;
+}
+
+/* special rules for certain elements "responsive" */
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+
+    .qs-message-body{
+        border-left: 2px solid lightgrey;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+
+    .qs-message-body{
+        border-top: 1px dotted lightgrey;
+        padding-top: 5px;
+    }
+
+    /* These stop the column text overlapping */
+    .wp-list-table.customers{
+        table-layout: auto;
+    }
+
+    /* This adds scrollbars to the table wrapper */
+    .qu-list-table{
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
